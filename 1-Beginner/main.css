@@ -1,0 +1,138 @@
+/* initial values */
+body, h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+body {
+  font-family: "Open sans";
+  height: 100vh;
+}
+
+header, #content, .card, footer {
+  padding: 16px;
+}
+
+#root {
+  background: linear-gradient(283.62deg, #FFE521 19.03%, #FFF7A9 89.75%);
+  margin: 50px auto 0;
+  width: 1200px;
+}
+
+#wrapper {
+  border-color: #FFFFFF;
+  border-style: none none none dotted;
+  border-width: 5px;
+  height: 100%;
+  margin-left: 100px;
+}
+
+
+/* helpers */
+.highlighter {
+  background: white;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* header */
+header>img {
+  height: 25px;
+}
+
+
+/* content */
+h1 {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Bitter";
+  font-size: 48px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.panel {
+  display: flex;
+}
+
+/* card */
+.photo {
+  height: 150px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.photo>img {
+  border-radius: 50%;
+  border: 5px white solid;
+  width: 140px;
+}
+
+.role, .company {
+  font-size: 0.83em;
+}
+
+.card.participant {
+  margin-top: 24px;
+}
+
+.participant>.info {
+  background: white;
+  margin-top: -16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.coach {
+  margin-right: 16px;
+}
+
+.coach>.photo {
+  margin-bottom: 16px;
+}
+
+.coach>h4 {
+  margin-bottom: 16px;
+}
+
+.company {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.company>span {
+  margin-right: 8px;
+}
+
+.company>img {
+  height: 18px;
+}
+
+/* footer */
+footer {
+  text-align: right ;
+}
+
+footer>img {
+  height: 25px;
+}
