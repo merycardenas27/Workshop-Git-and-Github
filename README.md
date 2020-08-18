@@ -39,6 +39,24 @@ El código de este proyecto deberá crear un _banner_ para este taller, el reque
 - Luego `git commit -m 'feat(banner): Update data of participant 1`
 - Y por último `git push origin feat/banner-participant1`
 
+### Participante 2 (Seguimiento de los cambios)
+- Clona este repositorio
+- Revisa si hay cambios en el repositorio remoto ejecutando `git pull origin master`
+- Crea tu rama ejecutando `git checkout -b feat/banner-participant2`
+- Ve al archivo `index.html` y haz los cambios requeridos
+  - Comenta la línea [73](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L73)
+  - Descomenta la línea [72](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L72)
+  - Reemplaza esto `[github-username]` por tu usuario de Github
+  - En la línea [77](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L77) reemplaza el texto de `H5` por tu nombre
+- Antes de subir tus cambios revisa otra vez si hay cambios en el repositorio remoto ejecutando `git fetch`
+- Revisa tus cambios locales usando `git status` y `git diff [file]`
+- Ahora ejecuta `git stash` para registrar el estado actual del directorio de trabajo y el índice
+- Luego `git checkout master` y `git pull origin master`
+- Y `git checkout feat/banner-participant2` y `git rebase master` para actualizar tu rama con los últimos cambios
+- Ahora `git stash pop` y `git add index.html` para recuperar tus cambios locales
+- Luego `git commit -m 'feat(banner): Update data of participant 2`
+- Y por último `git push origin feat/banner-participant2`
+
 ## Coach
 <img src="https://avatars3.githubusercontent.com/u/25912796?v=4" width="100px;" alt="Mery Cardenas"/>
 
