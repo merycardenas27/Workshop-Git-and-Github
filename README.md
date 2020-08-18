@@ -57,6 +57,27 @@ El código de este proyecto deberá crear un _banner_ para este taller, el reque
 - Luego `git commit -m 'feat(banner): Update data of participant 2`
 - Y por último `git push origin feat/banner-participant2`
 
+### Participante 3 (Enviando un Pull Request)
+- Haz un _fork_ este repositorio
+- Clona tu repositorio
+- Ejecuta `git remote -v` para visualizar la lista de remotos de tu proyecto
+- Crea un nuevo _remote_ ejecutando `git remote add upstream [original-repository-url]`
+- Revisa si hay cambios en el repositorio remoto original ejecutando `git fetch upstream`
+- Usa `git pull upstream master` para actualizar tu rama local `master`
+- Crea tu rama ejecutando `git checkout -b feat/banner-participant3`
+- Ve al archivo `index.html` y haz los cambios requeridos
+  - Comenta la línea [86](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L86)
+  - Descomenta la línea [85](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L85)
+  - Reemplaza esto `[github-username]` por tu usuario de Github
+  - En la línea [90](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L90) reemplaza el texto de `H5` por tu nombre
+- En tu terminal ejecuta `git fetch upstream`
+- Revisa tus cambios locales usando `git status` y `git diff [file]`
+- Ejecuta `git checkout feat/banner-participant3` y `git rebase master`
+- Prepara tus cambios ejecutando `git add -p index.html`
+- Luego `git commit -m 'feat(banner): Update photo of participant 3`
+- Y `git commit -m 'feat(banner): Update name of participant 3`
+- Para terminar ejecuta `git push origin feat/banner-participant3`
+
 ## Coach
 <img src="https://avatars3.githubusercontent.com/u/25912796?v=4" width="100px;" alt="Mery Cardenas"/>
 
