@@ -78,6 +78,18 @@ El código de este proyecto deberá crear un _banner_ para este taller, el reque
 - Y `git commit -m 'feat(banner): Update name of participant 3`
 - Para terminar ejecuta `git push origin feat/banner-participant3`
 
+### Participante 4 (Fusionando ramas)
+- Clona este repositorio
+- Revisa si hay cambios en el repositorio remoto ejecutando `git pull origin master`
+- Haz los mismos pasos que participante 1
+- Ejecuta `git checkout -b develop` y `git log --oneline`
+- Luego `git checkout -b feat/banner-participant1` y `git pull feat/banner-participant1`
+- También `git checkout -b feat/banner-participant2 origin/feat/banner-participant2`
+- Ve a la rama `develop` y fusiona las ramas de lxs participantes 1, 2
+- Acepta el _pull request_ de participante 3
+- Ve otra vez a la rama `develop` y ejecutar `git pull origin develop`
+- Fusiona tu rama `feat/banner-participant4`
+
 ## Coach
 <img src="https://avatars3.githubusercontent.com/u/25912796?v=4" width="100px;" alt="Mery Cardenas"/>
 
