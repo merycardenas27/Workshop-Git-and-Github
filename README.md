@@ -24,6 +24,21 @@ Necesitamos _4 participantes_ :raising_hand: para contribuir en este proyecto.
 El código de este proyecto deberá crear un _banner_ para este taller, el requerimiento es que cada participante coloque su nombre y foto en donde corresponde.
 ![preview](https://user-images.githubusercontent.com/25912796/90475795-d134f080-e0ed-11ea-9ce0-5bbeaa3411de.png)
 
+
+### Participante 1 (Primera colaboración)
+- Clona este repositorio
+- Revisa si hay cambios en el repositorio remoto ejecutando `git fetch` y `git merge FETCH_HEAD`
+- Crea tu rama ejecutando `git checkout -b feat/banner-participant1`
+- Ve al archivo `index.html` y haz los cambios requeridos
+  - Comenta la línea [60](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L60)
+  - Descomenta la línea [59](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L59)
+  - Reemplaza esto `[github-username]` por tu usuario de Github
+  - En la línea [64](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L64) reemplaza el texto de `H5` por tu nombre
+- Revisa tus cambios locales usando `git status` y `git diff [file]`
+- Prepara tus cambios ejecutando `git add index.html`
+- Luego `git commit -m 'feat(banner): Update data of participant 1`
+- Y por último `git push origin feat/banner-participant1`
+
 ## Coach
 <img src="https://avatars3.githubusercontent.com/u/25912796?v=4" width="100px;" alt="Mery Cardenas"/>
 
