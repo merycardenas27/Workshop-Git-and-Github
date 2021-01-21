@@ -1,75 +1,80 @@
 # 1-Beginner
 
 ## ¿Quieres participar?
-Necesitamos _4 participantes_ :raising_hand: para contribuir en este proyecto.
-- Busca y únete al canal `workshop-git-and-github` en slack
-- Y comparte en el canal tu **usuario de Github**
+Necesitamos _4 participantes_ 👩‍💻 para contribuir en este ejercicio.
+- Comparte tu nombre y **usuario de Github** por el chat del workshop cuando la _coach_ lo solicite.
+- Participarán lxs 4 primerxs
 
 ## Empecemos
-El código de este proyecto deberá crear un _banner_ para este taller, el requerimiento es que cada participante coloque su nombre y foto en donde corresponde.
+El proyecto consiste en crear un _banner_ para este taller y el requerimiento es que cada participante coloque su nombre y foto en donde corresponde.
 ![preview](https://user-images.githubusercontent.com/25912796/90475795-d134f080-e0ed-11ea-9ce0-5bbeaa3411de.png)
 
-### Participante 1 (Primera colaboración)
-- Haz _fork_ de este repositorio
-- Revisa si hay cambios en el repositorio remoto ejecutando `git fetch` y `git merge FETCH_HEAD`
-- Crea tu rama ejecutando `git checkout -b feat/banner-participant1`
-- Ve al archivo `index.html` y haz los cambios requeridos
-  - Comenta la línea [60](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L60)
-  - Descomenta la línea [59](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L59)
-  - Reemplaza esto `[github-username]` por tu usuario de Github
-  - En la línea [64](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L64) reemplaza el texto de `H5` por tu nombre
-- Revisa tus cambios locales usando `git status` y `git diff [file]`
-- Prepara tus cambios ejecutando `git add index.html`
-- Luego `git commit -m 'feat(banner): Update data of participant 1`
-- Y por último `git push origin feat/banner-participant1`
+## Instrucciones
 
-### Participante 2 (Seguimiento de los cambios)
-- Clona este repositorio
-- Revisa si hay cambios en el repositorio remoto ejecutando `git pull origin master`
-- Crea tu rama ejecutando `git checkout -b feat/banner-participant2`
-- Ve al archivo `index.html` y haz los cambios requeridos
-  - Comenta la línea [73](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L73)
-  - Descomenta la línea [72](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L72)
-  - Reemplaza esto `[github-username]` por tu usuario de Github
-  - En la línea [77](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L77) reemplaza el texto de `H5` por tu nombre
-- Antes de subir tus cambios revisa otra vez si hay cambios en el repositorio remoto ejecutando `git fetch`
-- Revisa tus cambios locales usando `git status` y `git diff [file]`
-- Ahora ejecuta `git stash` para registrar el estado actual del directorio de trabajo y el índice
-- Luego `git checkout master` y `git pull origin master`
-- Y `git checkout feat/banner-participant2` y `git rebase master` para actualizar tu rama con los últimos cambios
-- Ahora `git stash pop` y `git add index.html` para recuperar tus cambios locales
-- Luego `git commit -m 'feat(banner): Update data of participant 2`
-- Y por último `git push origin feat/banner-participant2`
+### Preparándonos para colaborar en un repositorio remoto (Participante 1)
 
-### Participante 3 (Enviando un Pull Request)
-- Haz un _fork_ este repositorio
-- Clona tu repositorio
-- Ejecuta `git remote -v` para visualizar la lista de remotos de tu proyecto
-- Crea un nuevo _remote_ ejecutando `git remote add upstream [original-repository-url]`
-- Revisa si hay cambios en el repositorio remoto original ejecutando `git fetch upstream`
-- Usa `git pull upstream master` para actualizar tu rama local `master`
-- Crea tu rama ejecutando `git checkout -b feat/banner-participant3`
-- Ve al archivo `index.html` y haz los cambios requeridos
-  - Comenta la línea [86](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L86)
-  - Descomenta la línea [85](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L85)
-  - Reemplaza esto `[github-username]` por tu usuario de Github
-  - En la línea [90](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L90) reemplaza el texto de `H5` por tu nombre
-- En tu terminal ejecuta `git fetch upstream`
-- Revisa tus cambios locales usando `git status` y `git diff [file]`
-- Ejecuta `git checkout feat/banner-participant3` y `git rebase master`
-- Prepara tus cambios ejecutando `git add -p index.html`
-- Luego `git commit -m 'feat(banner): Update photo of participant 3`
-- Y `git commit -m 'feat(banner): Update name of participant 3`
-- Para terminar ejecuta `git push origin feat/banner-participant3`
+- Hacer _fork_ de este [repositorio](https://github.com/MeryCardenas23/Workshop-Git-and-Github)
+- Agregar al resto de las participantes como colaboradoras de tu repositorio (ir a _configuraciones_ y luego _administrar acceso_)
+- Clonar tu repositorio
+- Crear una rama `develop` en base a `master`
+- Ejecutar `git push origin develop`
 
-### Participante 4 (Fusionando ramas)
-- Clona este repositorio
-- Revisa si hay cambios en el repositorio remoto ejecutando `git pull origin master`
-- Haz los mismos pasos que participante 1
-- Ejecuta `git checkout -b develop` y `git log --oneline`
-- Luego `git checkout -b feat/banner-participant1` y `git pull feat/banner-participant1`
-- También `git checkout -b feat/banner-participant2 origin/feat/banner-participant2`
-- Ve a la rama `develop` y fusiona las ramas de lxs participantes 1, 2
-- Acepta el _pull request_ de participante 3
-- Ve otra vez a la rama `develop` y ejecutar `git pull origin develop`
-- Fusiona tu rama `feat/banner-participant4`
+### Usando comandos de Git - Parte I (Participante 2)
+
+- Clonar el repositorio de _participante 1_
+- Crear una rama ejecutando `git checkout -b participante-2`
+- Ir al archivo _index.html_ y en la línea [73](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L73) cambiar la url de _source_ con tu usuario de Github, esto mostrará tu foto en el banner.
+- Ir a la línea [77](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L77) y reemplazar el texto de `H5` por tu nombre
+- Ejecutar `git status`
+- Ejecutar `git diff`
+- Ejecutar `git add`
+- Ejecutar `git commit -m 'add participant 2 info'`
+- Ejecutar `git push origin participante-2`
+
+### Usando comandos de Git - Parte II (Participante 3)
+
+- Clonar el repositorio de _participante 1_
+- Crear una rama ejecutando `git checkout -b participante-3`
+- Ir al archivo _index.html_ y en la línea [86](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L86)
+- Ir a la línea [90](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L90) y reemplazar el texto de `H5` por tu nombre
+- Ejecutar `git stash`
+- Ejecutar `git stash pop`
+- Ejecutar `git add -p`
+- Seleccionar los cambios realizados el la línea [86](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L86)
+- Ejecutar `git commit -m 'add photo of participant 3'`
+- Seleccionar los cambios realizados el la línea [90](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L90)
+- Ejecutar `git commit -m 'add name of participant 3'`
+- Ejecutar `git push origin participante-3`
+
+### Siguiendo los cambios y fusionando ramas (Participante 1)
+- Ejecutar `git remote add upstream [repositorio]`
+- Ejecutar `git remote -v`
+- Ejecutar `git fetch`
+- Ejecutar `git fetch upstream`
+- Crear rama local ejecutando `git checkout -b participante-2` y luego `git pull origin participante-2`
+- Regresar a la rama `master` ejecutando `git checkout master`
+- Crear rama local ejecutando `git checkout -b participante-3` y luego `git pull origin participante-3`
+- Regresar a la rama `develop` ejecutando `git checkout develop`
+- Fusionar la rama `develop` con `participante-2` ejecutando `git merge participante-2`
+- Fusionar la rama `develop` con `participante-3` ejecutando `git rebase participante-3`
+- Ir al archivo _index.html_ y en la línea [60](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L60)
+- Ir a la línea [64](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L64) y reemplazar el texto de `H5` por tu nombre
+- Ejecutar `git add`
+- Ejecutar `git commit -m 'add participant 1 info'`
+- Ejecutar `git fetch`
+- Ejecutar `git fetch upstream`
+- Ir a la rama `master` y ejecutar `git pull upstream master`
+- Ir a la rama `develop` y ejecutar `git rebase master`
+- Ejecutar `git push origin develop`
+
+###  Reescribiendo la historia y enviando un pull request (Participante 4)
+- Clonar el repositorio de _participante 1_
+- Crear rama local `develop` ejecutando `git checkout -b develop origin/develop`
+- Ejecutar `git log` o `git log --oneline -[cantidad_de_commits_a_visualizar]`
+- Ejecutar `git rebase -i HEAD~[cantidad_de_commits_a_modificar]`
+- Ordenar la historia de manera que el commit realizado por _participante 1_ vaya adelante del commit de _participante 2_
+- Ir al archivo _index.html_ y en la línea [99](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L99)
+- Ir a la línea [103](https://github.com/MeryCardenas23/Workshop-Git-and-Github/blob/master/index.html#L103) y reemplazar el texto de `H5` por tu nombre
+- Ejecutar `git add`
+- Ejecutar `git commit -m 'add participant 4 info'`
+- Ejecutar `git push origin +develop` o `git push origin --force develop`
